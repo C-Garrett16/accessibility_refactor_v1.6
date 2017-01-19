@@ -8,15 +8,15 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
-  background: #2d2b30;
+  color: #f1f2ae; /* #3A6355 */
+  background: #2d2b30; /* #2d2b30 */
 }
 
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: white;
 }
 
 a:hover {
@@ -59,16 +59,35 @@ a:hover {
 }
 
 .nav a:hover {
-  color: white
+  color: #999;
 }
 
 header {
   text-align: center;
-  background: url('../img/concert02_with_text.jpg') no-repeat top center ;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
   height: 350px;
+}
+
+.band-name {
+  margin: 0 auto;
+  width: 650px;
+  margin-top: 120px;
+  font-size: 4.5em;
+  background-color: #f1f2ae;
+  border-radius: 10px;
+  color: #2d2b30;;
+}
+
+.slogan {
+  margin: 20px auto;
+  width: 500px;
+  color: #2d2b30;
+  background-color: #f1f2ae;
+  border-radius: 10px;
+  font-size: 1.8em;
 }
 
 .tag {
@@ -84,22 +103,23 @@ header {
 header .name{
   font-size: 3em;
 }
+
 .tagline {
   font-weight: 600;
   padding: 20px;
   text-transform: uppercase;
-  color: #781125
+  color: #781125;
 }
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  border-top: 4px solid #b6b167;
   clear: both;
 }
 .card:hover {
-  border-color: #96731A;
+  border-color: #f1f2ae;
 }
 
 
@@ -120,7 +140,7 @@ header .name{
 .heading{
   font-size: 2em;
   text-transform: uppercase;
-  color: #781125;
+  color: #b6b167;
   margin-top: 10px;
 }
 
@@ -172,6 +192,11 @@ a.spotify {
 a.social:hover {
   opacity: 1;
 }
+
+.social-text {
+  display: none;
+}
+
 .clearfix {
   clear: both;
 }

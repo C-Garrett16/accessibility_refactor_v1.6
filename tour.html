@@ -19,6 +19,8 @@
     </div>
 
     <header>
+      <h1 class="band-name">Accessible Frog</h1>
+      <p class="slogan"><strong>We make awesome music</strong></p>
     </header>
 
     <main >
@@ -26,25 +28,51 @@
         <div class="flex">
         <!-- The following images are decorative for this project. -->
         <!-- Please see the project instructions for information on how to handle these. -->
-          <img class="pick" src= "img/guitar_pick.png" alt="This is a guitar pick">
-          <p class= "heading">Tour Dates</p>
-          <img class="pick" src= "img/guitar_pick.png" alt="This is a guitar pick also">
-          <pre>
-                Date                             Venue                             Location
-                Mar 10 - 12                 The Warfield                  San Francisco, CA
-                Mar 20 - 23                 Pepsi Center                  Denver, CO
-                Apr 2 - 4                      Beacon Theatre             New York City, NY
-                Apr 10                         Paramount Theatre      Seattle, WA
-          </pre>
+          <img class="pick" src= "img/guitar_pick.png" alt="">
+          <h1 class= "heading">Tour Dates</h1>
+          <img class="pick" src= "img/guitar_pick.png" alt="">
+          <table id="tour-dates">
+            <caption>Tour Dates</caption>
+            <thead>
+              <th scope="col">Date</th>
+              <th scope="col">Venue</th>
+              <th scope="col">location</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mar 10 - 12</td>
+                <td>The Warfield</td>
+                <td>San Fransisco, CA</td>
+              </tr>
+              <tr>
+                <td>Mar 20 - 23</td>
+                <td>Pepsi Center</td>
+                <td>Denver, CO</td>
+              </tr>
+              <tr>
+                <td>Apr 2 - 4</td>
+                <td>Beacon Theatre</td>
+                <td>New York City</td>
+              </tr>
+              <tr>
+                <td>Apr 10</td>
+                <td>Paramount Theatre</td>
+                <td>Seattle, WA</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </main>
 
     <footer>
       <ul>
-        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png"></a></li>
-        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png"></a></li>
-        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png"></a></li>
+        <li><a href="#" class="social twitter"></a></li>
+        <p class="social-text">Twitter</p>
+        <li><a href="#" class="social youtube"></a></li>
+        <p class="social-text">Youtube</p>
+        <li><a href="#" class="social spotify"></a></li>
+        <p class="social-text">Spotify</p>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>

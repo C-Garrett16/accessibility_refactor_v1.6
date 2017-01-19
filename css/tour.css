@@ -14,3 +14,18 @@ pre {
   height: 0%;
   padding: 10px;
 }
+
+#tour-dates {
+  font-size: 1.4em;
+  margin-left: 70px;
+}
+
+#tour-dates thead {
+  text-align: center;
+}
+
+#tour-dates td {
+  text-align: center;
+  background-color: #4a4a4a;
+  padding: 10px;
+}

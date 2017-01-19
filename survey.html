@@ -19,52 +19,67 @@
     </div>
 
     <header>
+      <h1 class="band-name">Accessible Frog</h1>
+      <p class="slogan"><strong>We make awesome music</strong></p>
     </header>
 
     <main>
-      <p class= "heading">Survey</p>
+      <h1 class= "heading">Survey</h1>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg">
+          <img class="photo" src= "img/concert01.jpg" alt="Photo of concert">
           <div class="container">
             <form class = "survey">
-              <p>Who is your favorite band member:</p>
-              <input type="radio" name="res" value="John"> John
-              <input type="radio" name="res" value="Hazzard"> Hazzard
-              <input type="radio" name="res" value="Bob"> Bob
-              <input type="radio" name="res" value="Sally"> Sally
+              <fieldset>
+                <legend style="font-size: 1.25em"><strong>Survey</strong></legend>
+                <p><strong>Who is your favorite band member:</strong></p>
+                <input id="john" type="radio" name="res" value="John">
+                <label for="john">John</label>
+                <input id="hazzard" type="radio" name="res" value="Hazzard">
+                <label for="hazzard">Hazzard</label>
+                <input id="bob" type="radio" name="res" value="Bob">
+                <label for="bob">Bob</label>
+                <input id="sally" type="radio" name="res" value="Sally">
+                <label for="sally">Sally</label>
 
-              <p>What is your favorite album:</p>
-              <select id="albums" name="select">
-                <option value="1">Party For An Angel</option>
-                <option value="2">A Day Of Old</option>
-                <option value="3">Finding My Shadow</option>
-                <option value="4">Diamond Fireworks</option>
-                <option value="5">Enjoy Your Desire</option>
-                <option value="6">This Is For You</option>
-                <option value="7">Music Of My Life</option>
-                <option value="8">Song For Yesterday</option>
-                <option value="9">Heroic Forever</option>
-                <option value="10">Midnight Fires</option>
-                <option value="11">Street Of The Rider</option>
-              </select>
+                <p><strong>What is your favorite album:</strong></p>
+                <select id="albums" name="select">
+                  <option value="1">A Day Of Old</option>
+                  <option value="2">Diamond Fireworks</option>
+                  <option value="3">Enjoy Your Desire</option>
+                  <option value="4">Finding My Shadow</option>
+                  <option value="5">Heroic Forever</option>
+                  <option value="6">Midnight Fires</option>
+                  <option value="7">Music Of My Life</option>
+                  <option value="8">Party For An Angel</option>
+                  <option value="9">Song For Yesterday</option>
+                  <option value="10">Street Of The Rider</option>
+                  <option value="11">This Is For You</option>
+                </select>
 
-              <p>What is your favorite song:</p>
-              <textarea></textarea>
+                <p><strong>What is your favorite song:</strong></p>
+                <textarea></textarea>
+              </fieldset>
             </form>
           </div>
         </div>
       </div>
-      <p class= "heading">Newsletter</p>
+      <h1 class= "heading">Newsletter</h1>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg">
+          <img class="photo" src= "img/the_band.jpg" alt="Photo of the band in concert">
             <div class="container">
               <form class="newsletter">
-                  <p>Name: <input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
-                  <button type="submit">Sign Up</button>
+                <fieldset id="newsletter-fs">
+                  <legend style="font-size: 1.25em"><strong>Newsletter</strong></legend>
+                  <label for="name">Name:</label>
+                  <input id="name" type="text" name="name">
+                  <label for="emial">Email:</label>
+                  <input id="email" type="email" name="email">
+                  <label for="remail">Re-Email:</label>
+                  <input id="remail" type="email" name="remail">
+                </fieldset>
+                <button type="submit">Sign Up</button>
               </form>
             </div>
         </div>
@@ -73,9 +88,12 @@
 
     <footer>
       <ul>
-        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png"></a></li>
-        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png"></a></li>
-        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png"></a></li>
+        <li><a href="#" class="social twitter"></a></li>
+        <p class="social-text">Twitter</p>
+        <li><a href="#" class="social youtube"></a></li>
+        <p class="social-text">Youtube</p>
+        <li><a href="#" class="social spotify"></a></li>
+        <p class="social-text">Spotify</p>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>
