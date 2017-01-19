@@ -14,8 +14,8 @@ form {
 textarea:focus,
 select:focus,
 input:focus {
-  box-shadow: 3px 2px 5px 5px rgba(0,0,0,0.75);
-  transition: all .5s;
+  box-shadow: 3px 2px 5px 5px rgba(0,0,0,0.50);
+  transition: all .2s;
 }
 
 .container{
@@ -28,12 +28,22 @@ input:focus {
   padding: 20px;
 }
 
+@-moz-document url-prefix() {
+  .newsletter {
+    width: 300px;
+  }
+}
+
 .newsletter input {
   margin: 5px;
 }
 
 legend {
   text-align: left;
+}
+
+.aria {
+  display: none;
 }
 
 /* Styles for larger screens */

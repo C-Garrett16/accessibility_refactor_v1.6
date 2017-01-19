@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -29,7 +29,7 @@
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="Photo of concert">
           <div class="container">
-            <form class = "survey">
+            <form class="survey" role="survey-form">
               <fieldset>
                 <legend style="font-size: 1.25em"><strong>Survey</strong></legend>
                 <p><strong>Who is your favorite band member:</strong></p>
@@ -58,7 +58,8 @@
                 </select>
 
                 <p><strong>What is your favorite song:</strong></p>
-                <textarea></textarea>
+                <textarea aria-describedby="text-hint"></textarea>
+                <p id="text-hint" class="aria">This field is for you to enter your favorite song of the band.</p>
               </fieldset>
             </form>
           </div>
@@ -69,24 +70,26 @@
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg" alt="Photo of the band in concert">
             <div class="container">
-              <form class="newsletter">
+              <form class="newsletter" role="newsletter-form">
                 <fieldset id="newsletter-fs">
                   <legend style="font-size: 1.25em"><strong>Newsletter</strong></legend>
                   <label for="name">Name:</label>
                   <input id="name" type="text" name="name">
                   <label for="emial">Email:</label>
-                  <input id="email" type="email" name="email">
+                  <input aria-describedby="email-hint" id="email" type="email" name="email">
+                  <p id="email-hint" class="aria">This field is for your email adress. e.g: name@domain.com</p>
                   <label for="remail">Re-Email:</label>
                   <input id="remail" type="email" name="remail">
                 </fieldset>
-                <button type="submit">Sign Up</button>
+                <button aria-describedby="button-hint" type="submit">Sign Up</button>
+                <p id="button-hint" class="aria">This button submits your information to the server.</p>
               </form>
             </div>
         </div>
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"></a></li>
         <p class="social-text">Twitter</p>
